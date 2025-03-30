@@ -14,7 +14,7 @@ def gemma3_12(context):
     return chunk
 
 def gemma3(context):
-    client = genai.Client(api_key="AIzaSyAwtUKgTBGYYfcXz-yN6hQO0GZIQ4wGNxs")
+    client = genai.Client(api_key="shh..its a secret")
     response = client.models.generate_content(model="gemini-2.0-flash", contents=context)
     return response.text
 
